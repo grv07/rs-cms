@@ -1,5 +1,7 @@
 mod crud;
+mod db;
 
+pub use db::Connection;
 pub use crud::Base;
 
 #[cfg(test)]
