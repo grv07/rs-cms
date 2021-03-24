@@ -35,6 +35,7 @@ fn impl_crud(input: &DeriveInput) -> proc_macro2::TokenStream {
             }
             impl #ident {
                 fn insert<T>(conn: &T, #fields) {}
+                fn update<T>(conn: &T, #fields) {}
             }
             impl Base for #ident {
                 fn update() {}
